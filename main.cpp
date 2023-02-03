@@ -13,9 +13,9 @@ using namespace std;
 class Transaction
 {
     // set variables all private
-    string payer;
-    int points;
-    time_t timestamp;
+    string payer = " ";
+    int points = 0;
+    time_t timestamp = 0;
 
     // use public function to init and get value
 public:
@@ -87,8 +87,11 @@ vector<Transaction> readTransactions(int pointsToSpend, char *fileName)
         {
             cells.push_back(cell);
         }
-        Transaction t(cells[0], std::stoi(cells[1]), cells[2]);
-        transactions.push_back(t);
+        if (cells.size() == 3)
+        {
+            Transaction t(cells[0], std::stoi(cells[1]), cells[2]);
+            transactions.push_back(t);
+        }
     }
     return transactions;
 }
