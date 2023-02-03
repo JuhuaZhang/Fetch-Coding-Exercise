@@ -3,4 +3,4 @@
 build: program
 
 program: main.cpp
-	g++ -std=c++17 main.cpp -o main
+	g++ -w -std=c++17 main.cpp -o main
