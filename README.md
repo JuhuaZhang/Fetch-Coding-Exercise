@@ -29,9 +29,11 @@ The problem is to calculate the way to spend points based on transactions histor
 
 ### Compilation
 
-To compile, navigate to the directory and type:
+To compile, navigate to the directory and type `make`:
 
 ```cpp
+git clone git@github.com:JuhuaZhang/Fetch-Coding-Exercise.git
+cd Fetch-Coding-Exercise
 make
 ```
 
